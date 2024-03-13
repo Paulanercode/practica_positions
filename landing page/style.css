@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  gap: 5%;
+  background-color: rgba(0, 0, 0, 0.318);
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  overflow-y: hidden;
+}
+
+.logo-the-last {
+  width: 200px;
+}
+.logo-firefly {
+  width: 100px;
+}
+
+ul {
+  list-style: none;
+  width: 200px;
+}
+
+header > nav {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.league_gothic {
+  font-family: 'League Gothic', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  gap: 50px;
+  width: 100%;
+}
+
+a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+#buy:focus {
+  color: black;
+}
+.screen:focus {
+  color: black;
+}
+.screen:hover {
+  background-color: rgba(241, 80, 80, 0.725);
+}
+
+button {
+  padding: 11px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  height: 100svh;
+  overflow-y: hidden;
+  padding: 50px 50px;
+}
+
+aside {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 30vw;
+  height: 20svh;
+  padding: 20px;
+  gap: 10px;
+  min-height: 80svh;
+  min-width: 100px;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+h1 {
+  color: rgba(255, 0, 0, 0.85);
+  font-size: 35px;
+  margin-bottom: 6%;
+  padding: 5px;
+  font-weight: bolder;
+  border-radius: 1.5px;
+  text-shadow: 0 0 9px #e7dfdf;
+}
+
+aside > p {
+  color: aliceblue;
+  text-shadow: 0 0 50px #000000d0;
+  font-size: 18px;
+  padding: 10px;
+  border-top: 1px solid rgb(7, 7, 7);
+}
+
+body {
+  background-image: url(https://res.cloudinary.com/dewp6r3va/image/upload/v1709567505/deporte%20perros/practicas%20the%20last%20of%20us/da083fa5e19458dd750aa8a6ea30ba10bac6f87074693df5_vqzpkb.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  display: none;
+  width: 5%;
+}
+h2 {
+  color: white;
+  font-weight: bolder;
+  font-size: 40px;
+  border-bottom: 2px solid white;
+  text-shadow: 0 0 20px #b52e2ed0;
+}
+.gameplay {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+video {
+  width: 400px;
+}
+
+@media (max-width: 1027px) {
+  header > nav {
+    display: none;
+  }
+}
+@media (max-width: 1027px) {
+  #buy {
+    display: none;
+  }
+}
+@media (max-width: 1027px) {
+  .menu {
+    display: block;
+  }
+}
+
+@media (max-width: 1027px) {
+  .logo-firefly {
+    display: none;
+  }
+}
+
+@media (max-width: 503px) {
+  video {
+    width: 350px;
+  }
+}
+
+@media (max-width: 451px) {
+  video {
+    width: 300px;
+  }
+}
+
+@media (max-width: 403px) {
+  video {
+    width: 250px;
+  }
+}
+
+@media (max-width: 350px) {
+  video {
+    width: 200px;
+  }
+}
+/* BACKGROUND HEADER SIZE */
+
+@media (max-width: 320px) {
+  header {
+    height: 7svh;
+  }
+}
+
+/* ASIDE RESPONSIVE*/
+
+@media (max-width: 1168px) {
+  aside {
+    width: 40%;
+    left: 10%;
+    top: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  aside {
+    width: 70%;
+    left: 20%;
+    top: 20%;
+  }
+}
+
+@media (max-width: 875px) {
+  aside {
+    width: 70%;
+    left: 20%;
+    top: 20%;
+  }
+}
+
+@media (max-width: 500px) {
+  aside > h1 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 475px) {
+  aside > h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 438px) {
+  aside > h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 425px) {
+  aside {
+    width: 300px;
+    left: 70px;
+    top: 150px;
+  }
+}
+
+@media (max-width: 438px) {
+  aside > h1 {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 360px) {
+  aside {
+    width: 250px;
+    left: 60px;
+    top: 150px;
+  }
+}
+
+/*LOGO THE LAST OF US*/
+
+@media (max-width: 426px) {
+  .logo-the-last {
+    width: 140px;
+  }
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 100px 50px;
+}
+
+#tittle {
+  position: absolute;
+  top: 103%;
+  color: white;
+  font-size: 30px;
+  border-bottom: 2px;
+  text-shadow: 0 0 0px;
+}
+
+article {
+  width: 32%;
+  min-width: 250px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+p,
+h3 {
+  margin: 10px;
+  color: white;
+}
+
+.extra-info {
+  background-color: black;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 20svh;
+  width: 100%;
+  border: 1px solid red;
+  background-image: url(https://res.cloudinary.com/dewp6r3va/image/upload/v1709674696/deporte%20perros/practicas%20the%20last%20of%20us/the-last-of-us-the-last-of-us-2-ellie-the-last-of-us-tattoo-hd-wallpaper-preview_ey7c6x.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.logo-footer {
+  width: 300px;
+  height: 20%;
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.51);
+}
+
+.sony {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
